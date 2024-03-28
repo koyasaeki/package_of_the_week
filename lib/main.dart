@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/screens/device_info.dart';
+import 'package:package_of_the_week/screens/device_info.dart';
+import 'package:package_of_the_week/screens/font_awesome_flutter.dart';
 
 void main() {
   runApp(const MainApp());
@@ -34,6 +35,12 @@ class HomeScreen extends StatelessWidget {
               builder: (context) => const DeviceInfoScreen(),
             )),
             child: const Text('Device Info'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => const FontAwesomeFlutterScreen(),
+            )),
+            child: const Text('Font Awesome Flutter'),
           )
         ],
       )),
